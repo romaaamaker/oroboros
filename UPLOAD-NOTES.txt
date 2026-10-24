@@ -1,0 +1,5 @@
+Upload README.md, LICENSE, LICENSE_NOTICES.md to the repository root and PDFs to submission/. README.txt is a download convenience, not an extra repository file. DOCX files are editable sources.
+
+NOT FULLY CLEARED FOR SUBMISSION: review and sign revised documents; do not reuse signatures without leader approval. AIOE redistribution permission remains unresolved; obtain permission or remove its ingestion and redistributed derived values. Anthropic data terms were corrected to CC-BY/code MIT; verify release-specific version. Add your final YouTube link. Committee collaborators cannot be confirmed: this session has no usable GitHub credentials and designated account names were not provided. Public repo access is not equivalent to collaborator access.
+
+No remote repository files were changed by this preparation.

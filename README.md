@@ -23,13 +23,14 @@ Built for the **Aiversecity Future-Ready Workforce** hackathon (Domain 1). Synth
 | Item | Details |
 |---|---|
 | Team | **fourgee** — 4 members |
+| Team leader | KHAIRUL ZARIFF ADEEB BIN KHAIRUL ZIAD |
 | University | Universiti Teknologi MARA |
 | Domain | Domain 1 — Aiversecity Future-Ready Workforce |
 | Primary SDG target | SDG 4.4 — relevant skills for employment, decent jobs and entrepreneurship |
 | Submission repository | https://github.com/romaaamaker/oroboros |
-| Team prototype URL | https://romaaamaker.github.io/oroboros/ — deployment pending |
+| Team prototype URL | https://romaaamaker.github.io/oroboros/ |
 | Original live prototype | https://abdurahim-azami.github.io/oroboros/ |
-| Pitch deck PDF | `submission/SDC2026_fourgee_Oroboros_Pitch.pdf` — upload pending |
+| Pitch deck PDF | [Download PDF](submission/SDC2026_fourgee_Oroboros_Pitch.pdf) |
 | YouTube pitch and prototype demo | Pending — add the final 5–7 minute video link before submission |
 
 This repository is the team's submission fork of
@@ -61,7 +62,7 @@ The included `.github/workflows/pages.yml` deploys this repository's own
 4. Wait for the tests and deployment to succeed, then open the URL reported by
    the deployment. For this fork, the expected default URL is
    `https://romaaamaker.github.io/oroboros/`.
-5. After verifying the site, remove “deployment pending” from the table above.
+5. The site is deployed; recent Pages deployment runs succeeded.
 
 Future pushes to `main` trigger deployment. The workflow also listens for a
 successful **Nightly signals** run. Scheduled workflows may need to be enabled
@@ -83,7 +84,7 @@ submission/
   SDC2026_fourgee_Replit_POU.pdf
 ```
 
-Once uploaded, the pitch deck can be opened at
+The uploaded pitch deck can be opened at
 [submission/SDC2026_fourgee_Oroboros_Pitch.pdf](submission/SDC2026_fourgee_Oroboros_Pitch.pdf).
 Complete required signatures and replace the pending video entry before
 submission. Invite the committee's designated GitHub accounts as collaborators.
@@ -136,7 +137,7 @@ Full method, every assumption and every threshold: [docs/methodology.md](docs/me
 | Layer | Source | Update |
 |---|---|---|
 | Occupations and tasks | O*NET 31.0 (1,016 occupations, 18,838 tasks, DWA hierarchy), CC BY 4.0 | Version stamp |
-| Task exposure | GPTs are GPTs labels (MIT), Anthropic Economic Index (MIT), Felten AIOE (context) | Release-based, re-ingested on change |
+| Task exposure | GPTs are GPTs labels (MIT), Anthropic Economic Index (data: CC-BY; code: MIT), Felten AIOE (context) | Release-based, re-ingested on change |
 | Live momentum | arXiv API, HN Algolia API, GitHub REST API, Remotive and Arbeitnow | **Nightly GitHub Action**, dated snapshots in `data/snapshots/` |
 | SDG targets | UN Stats SDG API (169 targets, Malaysia area 458 indicators) | Dated pull |
 | Courses | Microsoft Learn Catalog API (23 free learning paths) | Nightly link check |
@@ -187,3 +188,7 @@ occupations, and courses come only from the catalogue with a URL and a check dat
 assists a person's own choice; it must not be used for hiring or firing.
 
 Attribution and licences: [LICENSE_NOTICES.md](LICENSE_NOTICES.md).
+
+## Licensing
+
+Team-owned original material is licensed under [Apache-2.0](LICENSE), excluding third-party assets and datasets. See [LICENSE_NOTICES.md](LICENSE_NOTICES.md). **Outstanding:** AIOE has no explicit upstream redistribution license; citation alone is not clearance. Anthropic specifies CC-BY for data and MIT for code; its metadata differs, so verify release-specific terms before asserting full compliance.
