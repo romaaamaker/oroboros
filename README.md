@@ -18,7 +18,76 @@ and what is left becomes a different job. Oroboros walks one person through that
 
 Built for the **Aiversecity Future-Ready Workforce** hackathon (Domain 1). Synthetic personas only.
 
-**Live demo: https://abdurahim-azami.github.io/oroboros/** (redeployed after every nightly signal refresh)
+## Team and submission
+
+| Item | Details |
+|---|---|
+| Team | **fourgee** — 4 members |
+| University | Universiti Teknologi MARA |
+| Domain | Domain 1 — Aiversecity Future-Ready Workforce |
+| Primary SDG target | SDG 4.4 — relevant skills for employment, decent jobs and entrepreneurship |
+| Submission repository | https://github.com/romaaamaker/oroboros |
+| Team prototype URL | https://romaaamaker.github.io/oroboros/ — deployment pending |
+| Original live prototype | https://abdurahim-azami.github.io/oroboros/ |
+| Pitch deck PDF | `submission/SDC2026_fourgee_Oroboros_Pitch.pdf` — upload pending |
+| YouTube pitch and prototype demo | Pending — add the final 5–7 minute video link before submission |
+
+This repository is the team's submission fork of
+[the original Oroboros implementation](https://github.com/abdurahim-azami/oroboros).
+Preserve the existing commit history, contributor attribution and third-party
+license notices. Proposed impact targets are not measured outcomes.
+
+## Actual tool and sponsor usage
+
+- **Claude Code:** used for development; the exact version was not recorded.
+- **Higgsfield AI:** used for web-app visual design.
+- **Replit:** used to prepare submission documentation, the pitch deck and the
+  pitch/demo video script. Replit does not host the existing public prototype.
+- **RunPod:** not used; the project has no GPU workload. The team reports that
+  it spoke with the administration and confirmed that RunPod is not required
+  for this project. No GPU-use claim is made.
+
+The optional model/server code described below is not an active service in
+the submitted static prototype.
+
+## Deploy this fork to GitHub Pages
+
+The included `.github/workflows/pages.yml` deploys this repository's own
+`site/` directory; it does not depend on the original repository's deployment.
+
+1. In this repository's **Actions** tab, enable workflows if GitHub prompts.
+2. In **Settings → Pages → Build and deployment**, select **GitHub Actions**.
+3. In **Actions → Deploy site to GitHub Pages**, choose **Run workflow** on `main`.
+4. Wait for the tests and deployment to succeed, then open the URL reported by
+   the deployment. For this fork, the expected default URL is
+   `https://romaaamaker.github.io/oroboros/`.
+5. After verifying the site, remove “deployment pending” from the table above.
+
+Future pushes to `main` trigger deployment. The workflow also listens for a
+successful **Nightly signals** run. Scheduled workflows may need to be enabled
+separately in a fork; verify their runs before claiming automatic refreshes.
+Repository settings, secrets and collaborator access are not inherited.
+
+GitHub Pages hosts only the static app, which works without an LLM. It does
+not run the optional Python/FastAPI server.
+
+## Submission files
+
+Place the final reviewed PDFs and genuine proof of use in `submission/`:
+
+```text
+submission/
+  SDC2026_fourgee_Preliminary.pdf
+  SDC2026_fourgee_TechDeclaration.pdf
+  SDC2026_fourgee_Oroboros_Pitch.pdf
+  SDC2026_fourgee_Replit_POU.pdf
+```
+
+Once uploaded, the pitch deck can be opened at
+[submission/SDC2026_fourgee_Oroboros_Pitch.pdf](submission/SDC2026_fourgee_Oroboros_Pitch.pdf).
+Complete required signatures and replace the pending video entry before
+submission. Invite the committee's designated GitHub accounts as collaborators.
+Keep real development history; do not backdate or manufacture commits.
 
 ---
 
@@ -77,8 +146,8 @@ Details, versions, licences and fetch dates: [docs/data-sources.md](docs/data-so
 ## Language model disclosure
 
 - **The core runs without an LLM.** Every number, role, task, course and SDG tag on screen is computed by code from the data files.
-- Optional model: **Qwen2.5-7B-Instruct** (open weights, Apache-2.0), served on Runpod's OpenAI-compatible vLLM endpoint.
-- It does two jobs only: mapping pasted CV text to task IDs from the chosen occupation's list, and rephrasing sentences the engine already computed.
+- Optional model integration: **Qwen2.5-7B-Instruct** (open weights, Apache-2.0), designed for an OpenAI-compatible vLLM endpoint. It is **not connected in the submitted static prototype**, and RunPod was not used.
+- If separately configured, this integration is intended for two jobs only: mapping pasted CV text to task IDs from the chosen occupation's list, and rephrasing sentences the engine already computed.
 - Guardrails in `server/app.py`: IDs not in the database are dropped; an explanation containing a number or link not present in the input is rejected and the computed text is shown instead.
 
 ## Known limits (said before anyone asks)
