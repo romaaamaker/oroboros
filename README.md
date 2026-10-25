@@ -31,7 +31,7 @@ Built for the **Aiversecity Future-Ready Workforce** hackathon (Domain 1). Synth
 | Team prototype URL | https://romaaamaker.github.io/oroboros/ |
 | Original live prototype | https://abdurahim-azami.github.io/oroboros/ |
 | Pitch deck PDF | [Download PDF](submission/SDC2026_fourgee_Oroboros_Pitch.pdf) |
-| YouTube pitch and prototype demo | https://youtu.be/HL_27wiionk |
+| YouTube pitch and prototype demo | https://youtu.be/HL_27wiionk , https://youtu.be/m0wJS_0c4lk|
 
 This repository is the team's submission fork of
 [the original Oroboros implementation](https://github.com/abdurahim-azami/oroboros).
